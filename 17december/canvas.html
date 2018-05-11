@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas</title>
+	<style>
+	#myCanvas{
+
+	}
+</style>
+
+</head>
+<body>
+	<canvas id="myCanvas">
+		
+	</canvas>
+
+	<script type="text/javascript">
+		var c=document.getElementById('myCanvas');
+		var conxt=c.getContext('2d');
+		//context.rect(x,y,width,height);
+		conxt.strokeStyle="red";
+		conxt.fillStyle="green";
+		conxt.lineWidth="5";
+		conxt.rect(200,10,50,50);
+		conxt.stroke();
+		conxt.fill();
+
+		conxt.beginPath();
+		conxt.fillStyle="green";
+		conxt.arc(50,50,50,0,2*Math.PI);
+		conxt.fill();
+	</script>
+
+</body>
+</html>

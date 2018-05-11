@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elements</title>
+	<style>
+	ul.nav{
+		list-style-type:none;
+	}
+
+	ul.nav li{
+		padding: 0px;
+	    margin: 7px 10px;
+		display: inline-block;
+	    background: #ff8855;
+	    font-size: 20px;
+	    font-family: fantasy;
+	}
+
+	ul.nav li a{
+		display: inline-block;
+		padding: 8px 12px;
+		text-decoration: none;
+		color:#000000;
+	}
+
+	ul.navVertical{
+		list-style-type:none;
+		width: 220px;
+	}
+
+	ul.navVertical li{
+		padding: 0px;
+	    margin: 7px 10px;
+	    background: #ff8855;
+	    font-size: 20px;
+	    font-family: fantasy;
+	}
+
+	ul.navVertical li a{
+		display: block;
+		padding: 8px 20px;
+		text-decoration: none;
+		color:#000000;
+	}
+
+	ul.navVertical li a:hover{
+		display: block;
+		padding: 8px 10px;
+		text-decoration: none;
+		color:#000000;
+		border-left: 10px solid #bb4411;
+	}
+	</style>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/B53196C5-0C60-C145-A05F-D09D6D061269/main.js" charset="UTF-8"></script></head>
+<body>
+	<ul class="nav">
+		<li class="sel"><a href="#">Home</a></li>
+		<li><a href="#">About Us</a></li>
+		<li><a href="#">Services</a></li>
+		<li><a href="#wsak">What Should We Already Know</a></li>
+		<li><a href="#aje">AngularJS Example</a></li>
+	</ul>
+	<ul class="navVertical">
+		<li class="sel"><a href="#">Home</a></li>
+		<li><a href="#">About Us</a></li>
+		<li><a href="#">Services</a></li>
+		<li><a href="#astha">Do Not Forget the End Tag</a></li>
+		<li><a href="#empHTMLEle">Empty HTML Elements</a></li>
+	</ul>
+	<div class="w3-col l10 m12" id="main">
+<h1>AngularJS <span class="color_h1">Tutorial</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="/default.asp">❮ Home</a>
+<a class="w3-right w3-btn" href="angular_intro.asp">Next ❯</a>
+</div>
+<br>
+
+<div class="w3-row">
+<div class="w3-quarter">
+<img class="w3-margin-bottom" src="pic_angular.jpg" alt="Angular" style="width:132px">
+</div>
+<div class="w3-threequarter intro">
+<p style="margin:0">
+AngularJS extends HTML with new attributes.</p>
+<p>AngularJS is perfect for Single Page Applications (SPAs).</p>
+<p>AngularJS is easy to learn.</p>
+<p><a href="angular_intro.asp">Start learning AngularJS now!</a></p>
+</div>
+</div>
+<hr>
+
+<h2>This Tutorial</h2>
+<p>This tutorial is specially designed to help you learn AngularJS as quickly and efficiently as possible.</p>
+<p>First, you will learn the basics of AngularJS: directives, expressions, 
+filters, modules, and controllers.</p>
+<p>Then you will learn everything else you need to know about AngularJS:</p>
+<p>Events, DOM, Forms, Input, Validation, Http, and more.</p>
+<hr>
+
+<h2>Try it Yourself Examples in Every Chapter</h2>
+<p>In every chapter, you can edit the examples online, and click on a button to view the result. </p>
+<div class="w3-example">
+<h3 id="aje">AngularJS Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:red"> lang<span style="color:mediumblue">="en-US"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:red"> src<span style="color:mediumblue">="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:black"></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> ng-app<span style="color:mediumblue">=""</span></span><span style="color:mediumblue">&gt;</span></span><br>
+&nbsp;    <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>Name : <span style="color:brown"><span style="color:mediumblue">&lt;</span>input<span style="color:red"> type<span style="color:mediumblue">="text"</span> ng-model<span style="color:mediumblue">="name"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br>
+&nbsp;    <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>Hello <span style="color:red">{{name}}</span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+ </div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=try_ng_default" target="_blank">Try it Yourself »</a>
+</div>
+<hr>
+
+<hr>
+
+<h2 id="wsak">What You Should Already Know</h2>
+<p>Before you study AngularJS, you should have a basic understanding of:</p>
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+<hr>
+
+<h2>AngularJS History</h2>
+<p>AngularJS version 1.0 was released in 2012.</p>
+<p>Miško Hevery, a Google employee, started to work with AngularJS in 2009.</p>
+<p>The idea turned out very well, and the project is now officially supported by 
+Google.</p>
+<hr>
+
+<h2>AngularJS Examples</h2>
+<p>W3Schools' AngularJS tutorial contains lots of AngularJS examples!</p>
+<p><a href="angular_examples.asp">AngularJS Examples</a></p>
+<hr>
+
+<h2>AngularJS Reference</h2>
+<p>The AngularJS reference contains all directives and filters used in this tutorial.</p>
+<p><a href="angular_ref_directives.asp">AngularJS Reference</a></p>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="/default.asp">❮ Home</a>
+<a class="w3-right w3-btn" href="angular_intro.asp">Next ❯</a>
+</div>
+</div>
+</body>
+</html>

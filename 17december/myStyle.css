@@ -1,0 +1,62 @@
+h2{
+			    font-family: fantasy;
+		}
+.notes{
+				border-left: #51442e 3px solid;
+    			color: #51442e;
+    			padding: 2px;
+    			background: #eee9d1;
+    			font-size: 16px;
+    			font-family: 'Arial';
+			}
+			.myHead{
+				font-size: 30px;
+			}
+
+			.delText{
+    				font-style: italic;
+    				text-decoration:line-through;
+    				color:gray;
+			}
+			.nav img{
+				width: 30px;
+				vertical-align: middle;
+			}
+			.nav a{
+				    text-decoration: none;
+				    color: #000000;
+				    margin: 10px;
+				    border: #dd9966 1px solid;
+				    display: inline-block;
+				    padding: 5px 10px;
+				    border-radius: 25px;
+			}
+
+			.navBg a{
+				    text-decoration: none;
+				    color: #000000;
+				    margin: 10px;
+				    border: #dd9966 1px solid;
+				    display: inline-block;
+				    padding: 5px 10px 5px 30px;
+				    border-radius: 25px;
+				    background: url(../img/sprite.png);
+				    background-size: 25px;
+				    background-repeat: no-repeat;
+			}
+
+			.navHome{
+				background-position: 3px 3px !important;
+			}
+			/*.navHome:hover{
+				background-position: 3px -26px !important;
+			}*/
+			.navAboutUs{
+				background-position: 3px -26px !important;
+			}
+			.navProfession{
+				background-position: 3px -52px !important;
+			}
+			.navEducation{
+				background-position: 3px -78px !important;
+			}
